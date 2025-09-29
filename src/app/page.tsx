@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Link from "next/link";
 import { PageHeader } from "@/components/app/page-header";
@@ -45,7 +46,7 @@ export default function Home() {
                     </Link>
                   </Button>
                   <Button asChild variant="secondary">
-                    <Link href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://www.linkedin.com/in/25umesh" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
                       <Linkedin />
                       <span>LinkedIn</span>
                     </Link>
