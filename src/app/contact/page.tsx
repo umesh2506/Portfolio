@@ -30,7 +30,7 @@ export default function ContactPage() {
                         <div>
                             <h3 className="font-semibold">Email</h3>
                             <p className="text-muted-foreground">Reach out via email for any inquiries.</p>
-                            <a href="mailto:hello@profolio.dev" className="text-accent hover:underline break-all">hello@profolio.dev</a>
+                            <a href="mailto:pagadojuumesh869@gmail.com" className="text-accent hover:underline break-all">pagadojuumesh869@gmail.com</a>
                         </div>
                     </div>
                     <div className="flex items-start gap-4">
@@ -40,7 +40,7 @@ export default function ContactPage() {
                         <div>
                             <h3 className="font-semibold">Phone</h3>
                             <p className="text-muted-foreground">Available for calls during business hours.</p>
-                            <a href="tel:+1234567890" className="text-accent hover:underline">(123) 456-7890</a>
+                            <a href="tel:+919390254712" className="text-accent hover:underline">+91 9390254712</a>
                         </div>
                     </div>
                     <div className="flex items-start gap-4">
@@ -49,7 +49,7 @@ export default function ContactPage() {
                         </div>
                         <div>
                             <h3 className="font-semibold">Location</h3>
-                            <p className="text-muted-foreground">San Francisco, California</p>
+                            <p className="text-muted-foreground">Hyderabad, Telangana</p>
                             <p className="text-muted-foreground">Working remotely worldwide.</p>
                         </div>
                     </div>
