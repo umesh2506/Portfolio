@@ -4,7 +4,8 @@ import { PageHeader } from "@/components/app/page-header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Film, Code } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 
 const projects = [
   {
@@ -12,34 +13,39 @@ const projects = [
     title: "QuantumLeap CRM",
     description: "A comprehensive customer relationship management platform designed for SaaS companies, featuring advanced analytics and a modular interface.",
     imageId: "project-1",
-    liveUrl: "#",
-    sourceUrl: "#",
+    url: "#",
+    category: "Web Development",
   },
   {
     id: "2",
     title: "Aethera E-commerce",
     description: "An online marketplace for artisanal goods, focusing on a seamless user experience, secure payments, and vendor management.",
     imageId: "project-2",
-    liveUrl: "#",
-    sourceUrl: "#",
+    url: "#",
+    category: "Web Development",
   },
   {
     id: "3",
-    title: "NovaTask Manager",
-    description: "A productivity app that combines Kanban boards, calendars, and to-do lists into a single, intuitive workflow.",
+    title: "Cinematic Travel Montage",
+    description: "A short film showcasing stunning landscapes from a recent trip, edited with a focus on storytelling and visual rhythm.",
     imageId: "project-3",
-    liveUrl: "#",
-    sourceUrl: "#",
+    url: "#",
+    category: "Video Editing",
   },
   {
     id: "4",
-    title: "ConnectSphere Social",
-    description: "A mobile-first social networking app for hobbyists to connect and share their creative projects.",
+    title: "Product Promo Video",
+    description: "A high-energy promotional video for a new tech gadget, featuring dynamic motion graphics and a compelling narrative.",
     imageId: "project-4",
-    liveUrl: "#",
-    sourceUrl: "#",
+    url: "#",
+    category: "Video Editing",
   },
 ];
+
+const categoryIcons = {
+  "Web Development": <Code />,
+  "Video Editing": <Film />,
+};
 
 export default function ProjectsPage() {
   return (
@@ -63,21 +69,20 @@ export default function ProjectsPage() {
                   </div>
                 )}
                 <CardHeader>
-                  <CardTitle className="text-xl">{project.title}</CardTitle>
+                  <div className="flex items-center gap-2">
+                    {/* @ts-ignore */}
+                    {categoryIcons[project.category]}
+                    <Badge variant="secondary">{project.category}</Badge>
+                  </div>
+                  <CardTitle className="text-xl pt-2">{project.title}</CardTitle>
                   <CardDescription className="pt-2">{project.description}</CardDescription>
                 </CardHeader>
                 <div className="flex-grow" />
                 <CardFooter className="flex justify-end gap-4 bg-muted/50 p-4">
-                  <Button variant="outline" asChild>
-                    <Link href={project.sourceUrl} target="_blank" rel="noopener noreferrer">
-                      <Github />
-                      <span>Source</span>
-                    </Link>
-                  </Button>
                   <Button asChild>
-                    <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                    <Link href={project.url} target="_blank" rel="noopener noreferrer">
                       <ExternalLink />
-                      <span>Live Demo</span>
+                      <span>View Project</span>
                     </Link>
                   </Button>
                 </CardFooter>
