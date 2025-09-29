@@ -1,3 +1,34 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "profile-picture",
+      "description": "A professional headshot of the portfolio owner.",
+      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NTkxMTIxOTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional headshot"
+    },
+    {
+      "id": "project-1",
+      "description": "Screenshot of a modern web application dashboard.",
+      "imageUrl": "https://images.unsplash.com/photo-1559028006-448665bd7c7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3ZWIlMjBhcHB8ZW58MHx8fHwxNzU5MDU5MDkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "web app"
+    },
+    {
+      "id": "project-2",
+      "description": "Homepage of an e-commerce website.",
+      "imageUrl": "https://images.unsplash.com/photo-1487014679447-9f8336841d58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxlY29tbWVyY2UlMjB3ZWJzaXRlfGVufDB8fHx8MTc1OTA2MjEwNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ecommerce website"
+    },
+    {
+      "id": "project-3",
+      "description": "Landing page for a SaaS product.",
+      "imageUrl": "https://images.unsplash.com/photo-1663130715904-45439fbf827d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxTYWFTJTIwbGFuZGluZ3BhZ2V8ZW58MHx8fHwxNzU5MTM1NDMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "SaaS landingpage"
+    },
+    {
+      "id": "project-4",
+      "description": "A mobile application interface.",
+      "imageUrl": "https://images.unsplash.com/photo-1601972602237-8c79241e468b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb2JpbGUlMjBhcHB8ZW58MHx8fHwxNzU5MDM4NjI5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mobile app"
+    }
+  ]
 }
