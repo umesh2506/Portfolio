@@ -18,33 +18,44 @@ const resumeSchema = z.object({
   }),
 });
 
-const initialResumeText = `Jane Doe
-Full-Stack Developer | San Francisco, CA | (123) 456-7890 | jane.doe@email.com | linkedin.com/in/janedoe | github.com/janedoe
+const initialResumeText = `PAGADOJU UMESH
+pagadojuumesh869@gmail.com | +91 9390254712 | DOB - 25 JUN 2005
 
-Summary
-Innovative and detail-oriented Full-Stack Developer with 5+ years of experience in building and maintaining responsive web applications. Proficient in JavaScript, React, Node.js, and cloud technologies. Passionate about creating seamless user experiences and writing clean, efficient code.
+CAREER OBJECTIVE
+To leverage my skills and experiences in full stack development, content creation, and community building while exploring opportunities to grow both technically and creatively. I aim to build a strong professional network, contribute to impactful projects, and continuously learn to make a positive impact in technology and society.
 
-Experience
-Senior Software Engineer, TechCorp Inc. - San Francisco, CA | 2021 - Present
-- Led the development of a new client-facing analytics dashboard using React and D3.js, resulting in a 20% increase in user engagement.
-- Architected and implemented a microservices-based backend with Node.js and Express, improving system scalability and reducing latency by 30%.
-- Mentored junior developers and conducted code reviews to ensure high-quality code standards.
+EDUCATION
+B. Tech, CSE
+METHODIST COLLEGE OF ENGINEERING AND TECHNOLOGY
+HYDERBAD, INDIA
+EXPECTED 2027
 
-Software Engineer, Innovate Solutions - San Francisco, CA | 2018 - 2021
-- Developed and maintained features for a large-scale e-commerce platform using React and Redux.
-- Collaborated with UX/UI designers to translate wireframes into high-quality, responsive code.
-- Wrote unit and integration tests with Jest and React Testing Library, achieving 90% code coverage.
+Intermediate, MPC
+SIDDARTHA JUNIOR COLLEGE
+HYDERBAD, INDIA
+2021-2023
+Percentage: 81%
 
-Education
-Bachelor of Science in Computer Science
-University of California, Berkeley | 2014 - 2018
+SSC
+SAI CHAITANYA MODEL SCHOOL
+HYDERBAD, INDIA
+2020-2021
+Percentage: 97%
 
-Skills
-- Languages: JavaScript (ES6+), TypeScript, HTML5, CSS3, Python
-- Frontend: React, Redux, Next.js, Vue.js, Tailwind CSS
-- Backend: Node.js, Express, NestJS, Python, Django
-- Databases: PostgreSQL, MongoDB, Redis
-- Cloud/DevOps: AWS (EC2, S3, Lambda), Docker, CI/CD, Git`;
+SKILLS
+💻 Technical
+•	Full Stack Web & Android App Development
+•	MS Excel, Word, PowerPoint
+•	Video Editing, Photography & Videography
+•	Content Creation & Direction
+
+🗣️ Communication
+•	Public Speaking
+•	Writing
+•	Social Media Management
+
+LANGUAGES KNOWN	
+•	English • Hindi • Telugu`;
 
 export function ResumeEditor() {
   const [resumeText, setResumeText] = useState(initialResumeText);
