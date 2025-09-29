@@ -50,7 +50,6 @@ export default function ContactPage() {
                         <div>
                             <h3 className="font-semibold">Location</h3>
                             <p className="text-muted-foreground">Hyderabad, Telangana</p>
-                            <p className="text-muted-foreground">Working remotely worldwide.</p>
                         </div>
                     </div>
                 </div>
