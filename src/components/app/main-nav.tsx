@@ -28,7 +28,7 @@ export function MainNav() {
       <SidebarMenu className="flex-1">
         {menuItems.map((item) => (
           <SidebarMenuItem key={item.path}>
-            <Link href={item.path} legacyBehavior passHref>
+            <Link href={item.path} passHref>
               <SidebarMenuButton
                 isActive={pathname === item.path}
                 tooltip={item.label}
