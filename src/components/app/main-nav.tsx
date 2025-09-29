@@ -3,12 +3,12 @@
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { SidebarHeader, SidebarMenu, SidebarMenuItem, SidebarMenuButton } from '@/components/ui/sidebar';
-import { Home, FileText, LayoutGrid, Mail, Briefcase } from 'lucide-react';
+import { Home, FileText, LayoutGrid, Mail, Briefcase, GanttChartSquare } from 'lucide-react';
 
 const menuItems = [
   { path: '/', label: 'Home', icon: Home },
   { path: '/resume', label: 'Resume', icon: FileText },
-  { path: '/projects', label: 'Projects', icon: LayoutGrid },
+  { path: '/projects', label: 'Skills', icon: GanttChartSquare },
   { path: '/contact', label: 'Contact', icon: Mail },
 ];
 

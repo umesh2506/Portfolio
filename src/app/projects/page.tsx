@@ -1,112 +1,88 @@
-import Image from "next/image";
 import Link from "next/link";
 import { PageHeader } from "@/components/app/page-header";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { ExternalLink, Film, Code, Smartphone } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Code, Smartphone, Film } from "lucide-react";
 
-const projects = [
+const skills = [
   {
-    id: "1",
-    title: "QuantumLeap CRM",
-    description: "A comprehensive customer relationship management platform designed for SaaS companies, featuring advanced analytics and a modular interface.",
-    imageId: "project-1",
-    url: "#",
-    category: "Web Development",
+    title: "Web Development",
+    icon: <Code className="w-8 h-8 text-accent" />,
+    description: "Building responsive and interactive web applications using modern frameworks like React, Vue.js, and Node.js. Focused on creating seamless user experiences with clean, maintainable code and optimal performance.",
+    tags: ["JavaScript", "React", "CSS"]
   },
   {
-    id: "2",
-    title: "Aethera E-commerce",
-    description: "An online marketplace for artisanal goods, focusing on a seamless user experience, secure payments, and vendor management.",
-    imageId: "project-2",
-    url: "#",
-    category: "Web Development",
+    title: "Android Development",
+    icon: <Smartphone className="w-8 h-8 text-accent" />,
+    description: "Developing native Android applications with intuitive user interfaces and robust functionality. Experienced in Kotlin, Java, and modern Android architecture patterns to deliver high-quality mobile experiences.",
+    tags: ["Kotlin", "Java", "XML"]
   },
   {
-    id: "3",
-    title: "Cinematic Travel Montage",
-    description: "A short film showcasing stunning landscapes from a recent trip, edited with a focus on storytelling and visual rhythm.",
-    imageId: "project-3",
-    url: "#",
-    category: "Video Editing",
-  },
-  {
-    id: "4",
-    title: "Product Promo Video",
-    description: "A high-energy promotional video for a new tech gadget, featuring dynamic motion graphics and a compelling narrative.",
-    imageId: "project-4",
-    url: "#",
-    category: "Video Editing",
-  },
-  {
-    id: "5",
-    title: "NovaPlayer",
-    description: "A sleek, modern music player app for Android with playlist management, online streaming, and an intuitive user interface.",
-    imageId: "project-5",
-    url: "#",
-    category: "Android Development",
-  },
-  {
-    id: "6",
-    title: "TaskFlow",
-    description: "A productivity app for Android that helps users organize tasks, set reminders, and track their progress with a clean and simple design.",
-    imageId: "project-6",
-    url: "#",
-    category: "Android Development",
+    title: "Video Editing",
+    icon: <Film className="w-8 h-8 text-accent" />,
+    description: "Creating compelling visual stories through professional video editing and post-production. Skilled in color grading, motion graphics, and audio synchronization to produce engaging content for various platforms.",
+    tags: ["Premiere Pro", "After Effects", "DaVinci"]
   }
 ];
 
-const categoryIcons = {
-  "Web Development": <Code />,
-  "Video Editing": <Film />,
-  "Android Development": <Smartphone />,
-};
-
 export default function ProjectsPage() {
   return (
-    <div className="flex flex-col min-h-svh">
-      <PageHeader title="Projects" />
-      <main className="flex-1 p-6 sm:p-8 md:p-12">
-        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
-          {projects.map((project) => {
-            const projectImage = PlaceHolderImages.find(p => p.id === project.imageId);
-            return (
-              <Card key={project.id} className="flex flex-col overflow-hidden transition-shadow hover:shadow-xl">
-                {projectImage && (
-                  <div className="aspect-video relative">
-                    <Image
-                      src={projectImage.imageUrl}
-                      alt={projectImage.description}
-                      data-ai-hint={projectImage.imageHint}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                )}
-                <CardHeader>
-                  <div className="flex items-center gap-2">
-                    {/* @ts-ignore */}
-                    {categoryIcons[project.category]}
-                    <Badge variant="secondary">{project.category}</Badge>
-                  </div>
-                  <CardTitle className="text-xl pt-2">{project.title}</CardTitle>
-                  <CardDescription className="pt-2">{project.description}</CardDescription>
-                </CardHeader>
-                <div className="flex-grow" />
-                <CardFooter className="flex justify-end gap-4 bg-muted/50 p-4">
-                  <Button asChild>
-                    <Link href={project.url} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink />
-                      <span>View Project</span>
-                    </Link>
-                  </Button>
-                </CardFooter>
-              </Card>
-            );
-          })}
+    <div className="flex flex-col min-h-svh bg-background">
+      <header className="py-16 md:py-24 text-center bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+        <div className="container mx-auto px-4">
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Pagadojuumesh</h1>
+          <p className="mt-4 text-lg md:text-xl text-blue-100">
+            Passionate developer and creative professional crafting digital experiences through code and design
+          </p>
         </div>
+      </header>
+
+      <main className="flex-1">
+        <section id="skills" className="py-16 md:py-24">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold">My Skills</h2>
+              <p className="text-muted-foreground mt-2">
+                Explore my expertise across different domains of technology and creativity
+              </p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-8">
+              {skills.map((skill) => (
+                <Card key={skill.title} className="bg-card shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+                  <CardHeader className="items-center text-center">
+                    <div className="p-4 bg-accent/10 rounded-full mb-4">
+                      {skill.icon}
+                    </div>
+                    <CardTitle className="text-2xl">{skill.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent className="text-center">
+                    <p className="text-muted-foreground mb-6">{skill.description}</p>
+                    <div className="flex flex-wrap gap-2 justify-center">
+                      {skill.tags.map((tag) => (
+                        <Badge key={tag} variant="secondary">{tag}</Badge>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="cta" className="pb-16 md:pb-24">
+            <div className="container mx-auto px-4">
+                <Card className="max-w-3xl mx-auto p-8 text-center shadow-xl bg-card">
+                    <h2 className="text-3xl font-bold mb-4">Let's Work Together</h2>
+                    <p className="text-muted-foreground mb-6">
+                        Ready to bring your ideas to life? I'm always excited to collaborate on new projects and challenges.
+                    </p>
+                    <Button asChild size="lg">
+                        <Link href="/contact">Get In Touch</Link>
+                    </Button>
+                </Card>
+            </div>
+        </section>
       </main>
     </div>
   );
