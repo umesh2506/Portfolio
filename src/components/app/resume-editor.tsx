@@ -92,7 +92,7 @@ export function ResumeEditor() {
       <div className="lg:col-span-2">
         <Card className="h-full">
           <CardHeader>
-            <CardTitle>resume</CardTitle>
+            <CardTitle>My Resume</CardTitle>
             <CardDescription>This is a live preview of your resume.</CardDescription>
           </CardHeader>
           <CardContent>
