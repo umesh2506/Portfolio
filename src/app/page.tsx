@@ -18,15 +18,26 @@ export default function Home() {
             <CardContent className="p-0 md:flex md:items-stretch">
               <div className="p-8 md:p-12 md:w-2/3 flex flex-col justify-center">
                 <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl text-primary font-headline mb-4">
-                  Jane Doe
+                  Pagadoju Umesh
                 </h1>
                 <p className="text-xl text-muted-foreground mb-6">
-                  Full-Stack Developer & UI/UX Enthusiast
+                  a passionate Full Stack Developer currently pursuing my B.Tech (3rd Year) at Methodist College of Engineering and Technology.
                 </p>
-                <p className="mb-8 leading-relaxed">
-                  Welcome to my digital space. I specialize in building modern, responsive, and user-friendly web applications. With a passion for clean code and beautiful design, I transform complex problems into elegant, intuitive solutions. Explore my work and feel free to get in touch.
-                </p>
-                <div className="flex flex-wrap gap-4 mt-auto pt-4">
+                <div className="space-y-4 leading-relaxed">
+                  <p>
+                    💻 Skilled in developing web and Android applications, I can take up projects across any domain—from idea to deployment. I enjoy solving real-world problems with modern technologies and delivering end-to-end solutions.
+                  </p>
+                  <p>
+                    📸 Beyond tech, I am a content creator with expertise in video editing, photography, and videography, where I blend creativity with technical skills.
+                  </p>
+                  <p>
+                    🎥 I previously built a YouTube channel with 1K+ subscribers, which grew through original creative content before it was lost due to technical issues. This experience strengthened my skills in audience engagement, content creation, and digital storytelling.
+                  </p>
+                  <p>
+                    🎬 With a strong interest in the direction and creative field, I aspire to merge technology, creativity, and storytelling to bring innovative ideas to life.
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-4 mt-8 pt-4">
                   <Button asChild>
                     <Link href="#" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
                       <Github />
