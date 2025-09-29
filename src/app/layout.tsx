@@ -5,7 +5,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { MainNav } from '@/components/app/main-nav';
 
 export const metadata: Metadata = {
-  title: 'Profolio',
+  title: 'Portfolio',
   description: 'A professional portfolio to showcase your work.',
 };
 

@@ -21,7 +21,7 @@ export function MainNav() {
         <Link href="/" className="flex items-center gap-2.5">
             <Briefcase className="w-7 h-7 text-accent" />
             <h2 className="text-xl font-semibold tracking-tighter text-sidebar-foreground">
-                Profolio
+                Portfolio
             </h2>
         </Link>
       </SidebarHeader>
