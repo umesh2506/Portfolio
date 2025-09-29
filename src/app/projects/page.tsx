@@ -4,7 +4,7 @@ import { PageHeader } from "@/components/app/page-header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { ExternalLink, Film, Code } from "lucide-react";
+import { ExternalLink, Film, Code, Smartphone } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const projects = [
@@ -40,11 +40,28 @@ const projects = [
     url: "#",
     category: "Video Editing",
   },
+  {
+    id: "5",
+    title: "NovaPlayer",
+    description: "A sleek, modern music player app for Android with playlist management, online streaming, and an intuitive user interface.",
+    imageId: "project-5",
+    url: "#",
+    category: "Android Development",
+  },
+  {
+    id: "6",
+    title: "TaskFlow",
+    description: "A productivity app for Android that helps users organize tasks, set reminders, and track their progress with a clean and simple design.",
+    imageId: "project-6",
+    url: "#",
+    category: "Android Development",
+  }
 ];
 
 const categoryIcons = {
   "Web Development": <Code />,
   "Video Editing": <Film />,
+  "Android Development": <Smartphone />,
 };
 
 export default function ProjectsPage() {

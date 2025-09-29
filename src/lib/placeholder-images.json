@@ -29,6 +29,18 @@
       "description": "A person editing a video on a laptop.",
       "imageUrl": "https://images.unsplash.com/photo-1574717024633-6005c49ea5b8?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHZpZGVvJTIwZWRpdGluZ3xlbnwwfHwwfHx8MA",
       "imageHint": "video editing"
+    },
+    {
+      "id": "project-5",
+      "description": "Screenshot of a modern music player app on a smartphone.",
+      "imageUrl": "https://images.unsplash.com/photo-1511300636412-09356829a103?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhbmRyb2lkJTIwYXBwJTIwbXVzaWN8ZW58MHx8fHwxNzE2NDk2NDMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "android app music"
+    },
+    {
+      "id": "project-6",
+      "description": "Screenshot of a task management app on a smartphone.",
+      "imageUrl": "https://images.unsplash.com/photo-1620336214430-c1538a8a9254?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhbmRyb2lkJTIwYXBwJTIwdGFza3xlbnwwfHx8fDE3MTY0OTY0ODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "android app task"
     }
   ]
 }
