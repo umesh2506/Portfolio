@@ -12,22 +12,14 @@ const contactFormSchema = z.object({
 });
 
 export async function sendContactMessage(prevState: { message: string, errors?: any }, formData: FormData) {
-  const validatedFields = contactFormSchema.safeParse({
+  // This is a dummy implementation.
+  // In a real application, you would use a service like Resend or Nodemailer to send an email.
+  console.log('New contact message:');
+  console.log({
     name: formData.get('name'),
     email: formData.get('email'),
     message: formData.get('message'),
   });
-
-  if (!validatedFields.success) {
-    return {
-      errors: validatedFields.error.flatten().fieldErrors,
-      message: 'Error: Please check the form fields.',
-    };
-  }
-
-  // Simulate sending an email
-  console.log('New contact message:');
-  console.log(validatedFields.data);
 
   return { message: 'Your message has been sent successfully!', errors: {} };
 }

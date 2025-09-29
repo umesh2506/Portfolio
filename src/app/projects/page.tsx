@@ -88,7 +88,7 @@ export default function SkillsPage() {
                         Ready to bring your ideas to life? I'm always excited to collaborate on new projects and challenges.
                     </p>
                     <Button asChild size="lg">
-                        <Link href="/contact">Get In Touch</Link>
+                        <a href="mailto:pagadojuumesh869@gmail.com">Get In Touch</a>
                     </Button>
                 </Card>
             </div>
