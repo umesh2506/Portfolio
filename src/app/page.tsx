@@ -39,7 +39,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-wrap gap-4 mt-8 pt-4">
                   <Button asChild>
-                    <Link href="#" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://github.com/25umesh" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
                       <Github />
                       <span>GitHub</span>
                     </Link>
