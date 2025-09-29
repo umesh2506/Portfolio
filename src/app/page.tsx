@@ -52,7 +52,7 @@ export default function Home() {
                     </Link>
                   </Button>
                   <Button asChild variant="outline">
-                    <Link href="#" aria-label="Personal Website" target="_blank" rel="noopener noreferrer">
+                    <Link href="/projects" aria-label="Personal Website">
                       <Globe />
                       <span>Website</span>
                     </Link>
