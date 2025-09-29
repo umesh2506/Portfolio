@@ -34,7 +34,7 @@ export default function SkillsPage() {
     <div className="flex flex-col min-h-svh bg-background">
       <header className="py-16 md:py-24 text-center bg-gradient-to-r from-blue-500 to-purple-600 text-white">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Pagadojuumesh</h1>
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Pagadoju Umesh</h1>
           <p className="mt-4 text-lg md:text-xl text-blue-100">
             Passionate developer and creative professional crafting digital experiences through code and design
           </p>
