@@ -29,17 +29,12 @@ B. Tech, CSE
 METHODIST COLLEGE OF ENGINEERING AND TECHNOLOGY
 HYDERBAD, INDIA
 EXPECTED 2027
-
-Intermediate, MPC
-SIDDARTHA JUNIOR COLLEGE
-HYDERBAD, INDIA
+Intermediate, MPC SIDDARTHA JUNIOR COLLEGE HYDERBAD, INDIA
 2021-2023
 Percentage: 81%
-
 SSC
 SAI CHAITANYA MODEL SCHOOL
-HYDERBAD, INDIA
-2020-2021
+HYDERBAD, INDIA 2020-201
 Percentage: 97%
 
 SKILLS
@@ -48,7 +43,6 @@ SKILLS
 •	MS Excel, Word, PowerPoint
 •	Video Editing, Photography & Videography
 •	Content Creation & Direction
-
 🗣️ Communication
 •	Public Speaking
 •	Writing
@@ -98,7 +92,7 @@ export function ResumeEditor() {
       <div className="lg:col-span-2">
         <Card className="h-full">
           <CardHeader>
-            <CardTitle>Resume Preview</CardTitle>
+            <CardTitle>resume</CardTitle>
             <CardDescription>This is a live preview of your resume.</CardDescription>
           </CardHeader>
           <CardContent>
